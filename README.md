@@ -15,8 +15,8 @@ linked.add({
     crew: () => [{ name: "Pete", locationId: "3" }, { name: "Steve", locationId: "7" }],
     location: ({id}) => {
       switch(id) {
-        case "3" return { name: "Victoria" };
-        case "7" return { name: "New South Wales" };
+        case "3": return { name: "Victoria" };
+        case "7": return { name: "New South Wales" };
       }
     }
   },
