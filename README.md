@@ -30,7 +30,7 @@ linked.add({
   },
 });
 
-const result = linked.call("crew");
+const result = await linked.call("crew");
 
-// result = [ { name: "Pete", location: Promise({ name: "Victoria "}) }, ... ];
+// result = [ { name: "Pete", location: Function(Promise({ name: "Victoria "})) }, ... ];
 ```
