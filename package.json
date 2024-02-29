@@ -1,0 +1,29 @@
+{
+  "name": "linkedjs",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "format": "prettier --write .",
+    "tdd": "bun test --watch",
+    "test": "bun test:tsc && bun test:format && bun test:unit",
+    "test:unit": "bun test",
+    "test:tsc": "tsc --noEmit",
+    "test:format": "prettier --check ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "bun-types": "1.0.25",
+    "dotenv-cli": "7.3.0",
+    "esbuild": "0.19.2",
+    "esbuild-plugin-d.ts": "1.1.0",
+    "prettier": "3.0.3",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@digitak/esrun": "3.2.24",
+    "graphql": "16.8.1",
+    "graphql-type-json": "0.3.2"
+  }
+}
